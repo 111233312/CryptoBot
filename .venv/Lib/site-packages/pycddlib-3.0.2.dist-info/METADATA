@@ -1,0 +1,58 @@
+Metadata-Version: 2.2
+Name: pycddlib
+Version: 3.0.2
+Summary: A Python wrapper for cddlib
+Author-email: "Matthias C. M. Troffaes" <matthias.troffaes@gmail.com>
+Project-URL: Homepage, https://github.com/mcmtroffaes/pycddlib
+Project-URL: Documentation, https://pycddlib.readthedocs.io/
+Project-URL: Repository, https://github.com/mcmtroffaes/pycddlib.git
+Project-URL: Issues, https://github.com/mcmtroffaes/pycddlib/issues
+Project-URL: Changelog, https://github.com/mcmtroffaes/pycddlib/blob/develop/CHANGELOG.rst
+Keywords: convex, polyhedron, linear programming, double description method
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE.md
+License-File: AUTHORS
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: numpy; extra == "test"
+Requires-Dist: gmpy2; extra == "test"
+Requires-Dist: mypy; extra == "test"
+Requires-Dist: black; extra == "test"
+Requires-Dist: isort; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+
+The pycddlib package provides Python bindings for
+`cddlib <https://people.inf.ethz.ch/fukudak/cdd_home/>`_,
+which is a C implementation of the double description method
+for generating all extreme points of a general convex polyhedron
+given by a system of linear inequalities.
+The library also supports the reverse operation
+(i.e. convex hull computation).
+This means that one can move back and forth between an
+inequality representation and an extreme point
+representation of a polyhedron.
+
+The library can also solve a variety of other problems related to linear algebra.
+This includes linear programming,
+Fourier elimination,
+computing ranks,
+computing adjacencies and incidences,
+and removing redundancies from systems of linear inequalities.
+
+* Download: https://pypi.org/project/pycddlib/#files
+
+* Documentation: https://pycddlib.readthedocs.io/en/latest/
+
+* Development: https://github.com/mcmtroffaes/pycddlib/

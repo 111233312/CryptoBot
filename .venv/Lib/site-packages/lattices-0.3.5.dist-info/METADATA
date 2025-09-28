@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: lattices
+Version: 0.3.5
+Summary: Lattices is a package for the construction of lattices from a set of nodes and
+Home-page: https://github.com/dit/lattices
+License: UNKNOWN
+Keywords: lattice, partial order, graph, network
+Author: Ryan G. James
+Author-email: ryangregoryjames@gmail.com
+Requires-Python: ~=3.3
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: networkx
+Requires-Dist: codecov; extra == "dev"
+Requires-Dist: coverage[toml]; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: flake8-awesome; extra == "dev"
+Requires-Dist: flake8-bandit; extra == "dev"
+Requires-Dist: flake8-broken-line; extra == "dev"
+Requires-Dist: flake8-bugbear; extra == "dev"
+Requires-Dist: flake8-coding; extra == "dev"
+Requires-Dist: flake8-commas; extra == "dev"
+Requires-Dist: flake8-docstrings; extra == "dev"
+Requires-Dist: flake8-import-order; extra == "dev"
+Requires-Dist: flake8-rst; extra == "dev"
+Requires-Dist: flake8-rst-docstrings; extra == "dev"
+Requires-Dist: flake8-self; extra == "dev"
+Requires-Dist: flake8-todos; extra == "dev"
+Requires-Dist: ipython[nbconvert]; extra == "dev"
+Requires-Dist: nxpd; extra == "dev"
+Requires-Dist: pytest >= 4.4.0; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Requires-Dist: radon; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: ipython[nbconvert]; extra == "doc"
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: nxpd; extra == "plotting"
+Requires-Dist: codecov; extra == "test"
+Requires-Dist: pytest >= 4.4.0; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: plotting
+Provides-Extra: test
+
+Lattices
+========
+
+|build| |codecov| |readthedocs|
+
+``Lattices`` is a package for the construction of lattices from a set of nodes
+and an (partial) ordering relation.
+
+Drawing
+-------
+
+Lattices optionally utilizes `nxpd` to draw a lattice. This package is somewhat
+out of date at this point, and you install a modified version:
+
+.. code-block:: bash
+
+   pip install git+https://git@github.com/chebee7i/nxpd.git@refs/pull/15/merge#egg=nxpd
+
+
+.. |build| image:: https://github.com/dit/lattices/workflows/Build/badge.svg
+   :target: https://github.com/dit/lattices/actions?query=workflow%3A%22Build%22
+   :alt: build status
+
+.. |codecov| image:: https://codecov.io/gh/dit/lattices/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/dit/lattices
+  :alt: test coverage
+
+.. |readthedocs| image:: https://readthedocs.org/projects/lattices/badge/?version=latest
+  :target: https://lattices.readthedocs.io/en/latest/?badge=latest
+  :alt: documentation status
+
